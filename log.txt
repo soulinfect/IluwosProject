@@ -1,0 +1,724 @@
+19:57:21.888 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized native services in: C:\Users\User\.gradle\native
+19:57:21.920 [DEBUG] [org.gradle.internal.nativeintegration.services.NativeServices] Native-platform posix files integration is not available. Continuing with fallback.
+19:57:22.197 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Executing build 3d493668-2210-4f60-9fae-afdbc973ec39 in daemon client {pid=16348}
+19:57:22.376 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+19:57:22.377 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+19:57:22.379 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.379 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+19:57:22.379 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+19:57:22.379 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Software Loopback Interface 1
+19:57:22.379 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+19:57:22.380 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.382 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.382 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft 6to4 Adapter
+19:57:22.383 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+19:57:22.385 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.386 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.386 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (Network Monitor)
+19:57:22.386 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+19:57:22.387 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.388 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.388 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (SSTP)
+19:57:22.388 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+19:57:22.390 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.391 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.391 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2
+19:57:22.391 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter
+19:57:22.392 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.393 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.393 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /26.178.224.195
+19:57:22.393 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface Famatech Radmin VPN Ethernet Adapter
+19:57:22.393 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network) #2
+19:57:22.395 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.396 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.396 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Bluetooth Device (Personal Area Network) #2
+19:57:22.396 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+19:57:22.398 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.399 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.399 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft IP-HTTPS Platform Adapter
+19:57:22.399 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+19:57:22.400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.401 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.401 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter
+19:57:22.401 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Switch Extension Adapter
+19:57:22.403 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.404 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.404 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Hyper-V Virtual Switch Extension Adapter
+19:57:22.404 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+19:57:22.405 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.406 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.406 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (PPPOE)
+19:57:22.406 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+19:57:22.408 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.409 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.409 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IKEv2)
+19:57:22.409 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter
+19:57:22.411 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.412 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.412 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface VirtualBox Host-Only Ethernet Adapter
+19:57:22.412 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+19:57:22.413 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.415 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.415 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Teredo Tunneling Adapter
+19:57:22.415 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+19:57:22.416 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.418 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.418 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IP)
+19:57:22.418 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter
+19:57:22.419 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.420 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.420 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.56.1
+19:57:22.420 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface VirtualBox Host-Only Ethernet Adapter
+19:57:22.420 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+19:57:22.422 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.423 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.423 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (L2TP)
+19:57:22.423 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Kaspersky VPN
+19:57:22.424 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.425 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.425 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Kaspersky VPN
+19:57:22.425 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #5
+19:57:22.427 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.452 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.452 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #5
+19:57:22.452 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wi-Fi 6 AX201 160MHz
+19:57:22.453 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.455 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.455 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wi-Fi 6 AX201 160MHz
+19:57:22.455 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek USB GbE Family Controller
+19:57:22.456 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.458 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.458 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.0.108
+19:57:22.458 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface Realtek USB GbE Family Controller
+19:57:22.458 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #4
+19:57:22.460 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.461 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.461 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #4
+19:57:22.461 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461
+19:57:22.462 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.464 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.464 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461
+19:57:22.464 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+19:57:22.466 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.467 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.467 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IPv6)
+19:57:22.467 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+19:57:22.468 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.470 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.470 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Bluetooth Device (Personal Area Network)
+19:57:22.470 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+19:57:22.471 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.472 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.472 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Kernel Debug Network Adapter
+19:57:22.472 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+19:57:22.474 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.475 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.475 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (PPTP)
+19:57:22.475 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.477 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.478 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.478 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.478 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.479 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.481 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.481 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface VirtualBox Host-Only Ethernet Adapter-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.481 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000
+19:57:22.483 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.484 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.484 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000
+19:57:22.484 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.486 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.487 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.487 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.487 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.488 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.490 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.490 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.490 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.491 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.493 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.493 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.493 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+19:57:22.494 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.495 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.495 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+19:57:22.495 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.497 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.498 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.498 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.498 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.501 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.501 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.501 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+19:57:22.503 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.504 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.504 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+19:57:22.504 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek USB GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.506 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.508 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.508 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Realtek USB GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.508 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek USB GbE Family Controller-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.509 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.511 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.511 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Realtek USB GbE Family Controller-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.511 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek USB GbE Family Controller-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.512 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.514 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.514 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Realtek USB GbE Family Controller-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.514 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek USB GbE Family Controller-QoS Packet Scheduler-0000
+19:57:22.515 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.517 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.517 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Realtek USB GbE Family Controller-QoS Packet Scheduler-0000
+19:57:22.517 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek USB GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.518 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.519 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.524 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Realtek USB GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.524 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network) #2-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.527 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.529 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.529 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Bluetooth Device (Personal Area Network) #2-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.529 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.530 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.532 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.532 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.532 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-Virtual WiFi Filter Driver-0000
+19:57:22.533 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.534 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.534 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-Virtual WiFi Filter Driver-0000
+19:57:22.534 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-Native WiFi Filter Driver-0000
+19:57:22.536 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.537 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.537 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-Native WiFi Filter Driver-0000
+19:57:22.537 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.538 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.539 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.539 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.539 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.541 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.542 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.542 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.542 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-QoS Packet Scheduler-0000
+19:57:22.543 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.544 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.544 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-QoS Packet Scheduler-0000
+19:57:22.544 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Wireless-AC 9461-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.546 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.547 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.547 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Intel(R) Wireless-AC 9461-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.547 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.548 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.549 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.549 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.549 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.550 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.552 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.552 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.552 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.553 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.555 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.555 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.555 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.557 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.558 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.558 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IP)-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.558 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+19:57:22.560 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.561 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.561 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+19:57:22.561 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.562 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.564 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.564 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.564 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.565 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.567 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.567 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IPv6)-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.567 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+19:57:22.568 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.571 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.571 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+19:57:22.571 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.573 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.574 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.574 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+19:57:22.574 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.576 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.577 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.577 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (Network Monitor)-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.577 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+19:57:22.578 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.580 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.580 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+19:57:22.580 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Kaspersky VPN-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.583 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.585 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.585 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Kaspersky VPN-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.585 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.587 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.588 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.588 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Famatech Radmin VPN Ethernet Adapter-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.588 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.590 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.591 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.591 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Famatech Radmin VPN Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.591 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+19:57:22.592 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.594 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.594 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+19:57:22.594 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.595 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.597 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.597 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.597 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+19:57:22.598 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.600 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.600 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+19:57:22.600 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.601 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.602 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.602 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2-Kaspersky Lab NDIS 6 Filter-0000
+19:57:22.602 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.603 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.605 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.605 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2-VirtualBox NDIS Light-Weight Filter-0000
+19:57:22.605 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+19:57:22.606 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.607 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.607 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+19:57:22.607 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.609 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+19:57:22.610 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+19:57:22.610 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback multicast interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+19:57:22.614 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+19:57:22.615 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+19:57:22.618 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+19:57:22.619 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Attempting to connect to [b1378a92-bb6a-4690-afb4-e12d61fb151d port:62574, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]].
+19:57:22.619 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Trying to connect to address /127.0.0.1.
+19:57:22.622 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Connected to address /127.0.0.1:62574.
+19:57:22.638 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Connected to daemon DaemonInfo{pid=4732, address=[b1378a92-bb6a-4690-afb4-e12d61fb151d port:62574, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], state=Idle, lastBusy=1743346477932, context=DefaultDaemonContext[uid=b4864c38-eb5c-47ef-80e8-d4c96579623f,javaHome=C:\Program Files\Java\jdk1.8.0_202,daemonRegistryDir=C:\Users\User\.gradle\daemon,pid=4732,idleTimeout=10800000,daemonOpts=-Xmx2G,-Dfile.encoding=windows-1251,-Duser.country=RU,-Duser.language=ru,-Duser.variant]}. Dispatching request Build{id=3d493668-2210-4f60-9fae-afdbc973ec39, currentDir=C:\Users\User\Desktop\Sowl}.
+19:57:22.638 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Build
+19:57:22.649 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result org.gradle.launcher.daemon.protocol.BuildStarted@2cd76f31 from daemon DaemonInfo{pid=4732, address=[b1378a92-bb6a-4690-afb4-e12d61fb151d port:62574, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], state=Idle, lastBusy=1743346477932, context=DefaultDaemonContext[uid=b4864c38-eb5c-47ef-80e8-d4c96579623f,javaHome=C:\Program Files\Java\jdk1.8.0_202,daemonRegistryDir=C:\Users\User\.gradle\daemon,pid=4732,idleTimeout=10800000,daemonOpts=-Xmx2G,-Dfile.encoding=windows-1251,-Duser.country=RU,-Duser.language=ru,-Duser.variant]} (build should be starting).
+19:57:22.650 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 4732). The daemon log file: C:\Users\User\.gradle\daemon\4.9\daemon-4732.out.log
+19:57:22.651 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 2 mins 45.504 secs, performance: 99%, no major garbage collections]
+19:57:22.652 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+19:57:22.652 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=b4864c38-eb5c-47ef-80e8-d4c96579623f,javaHome=C:\Program Files\Java\jdk1.8.0_202,daemonRegistryDir=C:\Users\User\.gradle\daemon,pid=4732,idleTimeout=10800000,daemonOpts=-Xmx2G,-Dfile.encoding=windows-1251,-Duser.country=RU,-Duser.language=ru,-Duser.variant]
+19:57:22.654 [INFO] [org.gradle.internal.work.DefaultWorkerLeaseService] Using 12 worker leases.
+19:57:22.658 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for fileHashes, path C:\Users\User\Desktop\Sowl\.gradle\4.9\fileHashes\fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@5a5fcc44
+19:57:22.658 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (C:\Users\User\Desktop\Sowl\.gradle\4.9\fileHashes)
+19:57:22.659 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (C:\Users\User\Desktop\Sowl\.gradle\4.9\fileHashes).
+19:57:22.660 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (C:\Users\User\Desktop\Sowl\.gradle\4.9\fileHashes).
+19:57:22.666 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Run build' started
+19:57:22.667 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 started (1 worker(s) in use).
+19:57:22.667 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 2: acquired lock on root.1
+19:57:22.667 [INFO] [org.gradle.internal.buildevents.BuildLogger] Starting Build
+19:57:22.668 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Gradle user home: C:\Users\User\.gradle
+19:57:22.668 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Current dir: C:\Users\User\Desktop\Sowl
+19:57:22.668 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Settings file: null
+19:57:22.668 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Build file: null
+19:57:22.668 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Load build' started
+19:57:22.671 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+19:57:22.672 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Evaluate settings' started
+19:57:22.672 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+19:57:22.673 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+19:57:22.674 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.001 secs
+19:57:22.674 [INFO] [org.gradle.internal.buildevents.BuildLogger] Settings evaluated using settings file 'C:\Users\User\Desktop\Sowl\settings.gradle'.
+19:57:22.674 [DEBUG] [org.gradle.caching.configuration.internal.DefaultBuildCacheConfiguration] Found class org.gradle.caching.local.internal.DirectoryBuildCacheServiceFactory registered for class org.gradle.caching.local.DirectoryBuildCache
+19:57:22.675 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Finalize build cache configuration' started
+19:57:22.675 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Finalize build cache configuration'
+19:57:22.675 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Finalize build cache configuration' completed
+19:57:22.675 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Evaluate settings'
+19:57:22.675 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Evaluate settings' completed
+19:57:22.675 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Load build'
+19:57:22.676 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Load build' completed
+19:57:22.676 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Configure build' started
+19:57:22.676 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Load projects' started
+19:57:22.677 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' from state Registered to Created
+19:57:22.677 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Discovered.
+19:57:22.677 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Created.
+19:57:22.678 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: C:\Users\User\Desktop\Sowl\gradle.properties
+19:57:22.678 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Adding project properties (if not overwritten by user properties): [org.gradle.jvmargs, org.gradle.java.home]
+19:57:22.679 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Load projects'
+19:57:22.679 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Load projects' completed
+19:57:22.679 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Notify projectsLoaded listeners' started
+19:57:22.679 [INFO] [org.gradle.internal.buildevents.BuildLogger] Projects loaded. Root project using build file 'C:\Users\User\Desktop\Sowl\build.gradle'.
+19:57:22.679 [INFO] [org.gradle.internal.buildevents.BuildLogger] Included projects: [root project 'Sowl']
+19:57:22.680 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Execute 'rootProject {}' action' started
+19:57:22.680 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Cross-configure project :' started
+19:57:22.680 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Cross-configure project :'
+19:57:22.680 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Cross-configure project :' completed
+19:57:22.680 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Execute 'rootProject {}' action'
+19:57:22.680 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Execute 'rootProject {}' action' completed
+19:57:22.681 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Notify projectsLoaded listeners'
+19:57:22.681 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Notify projectsLoaded listeners' completed
+19:57:22.763 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.3 started (1 worker(s) in use).
+19:57:22.763 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations: acquired lock on root.1.2.3
+19:57:22.765 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.4 started (2 worker(s) in use).
+19:57:22.765 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 6: acquired lock on root.1.2.4
+19:57:22.765 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.5 started (3 worker(s) in use).
+19:57:22.766 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 9: acquired lock on root.1.2.5
+19:57:22.766 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.7 started (4 worker(s) in use).
+19:57:22.766 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 2: acquired lock on root.1.2.7
+19:57:22.766 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.12 started (5 worker(s) in use).
+19:57:22.767 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 3: acquired lock on root.1.2.12
+19:57:22.767 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.15 started (6 worker(s) in use).
+19:57:22.768 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 10: acquired lock on root.1.2.15
+19:57:22.767 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve ForgeGradle.jar (net.minecraftforge.gradle:ForgeGradle:2.3.4)' completed
+19:57:22.769 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.13 started (8 worker(s) in use).
+19:57:22.770 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 12: acquired lock on root.1.2.13
+19:57:22.771 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve httpmime.jar (org.apache.httpcomponents:httpmime:4.3.3)' completed
+19:57:22.771 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.11 started (9 worker(s) in use).
+19:57:22.773 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 5: acquired lock on root.1.2.11
+19:57:22.770 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve guava.jar (com.google.guava:guava:18.0)' completed
+19:57:22.770 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve jAstyle.jar (com.github.abrarsyed.jastyle:jAstyle:1.3)' completed
+19:57:22.773 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.10 started (10 worker(s) in use).
+19:57:22.774 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 8: acquired lock on root.1.2.10
+19:57:22.772 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve opencsv.jar (net.sf.opencsv:opencsv:2.3)' completed
+19:57:22.776 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve commons-io.jar (commons-io:commons-io:1.4)' completed
+19:57:22.775 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.9 started (11 worker(s) in use).
+19:57:22.775 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve javaxdelta.jar (com.nothome:javaxdelta:2.0.1)' completed
+19:57:22.777 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve commons-codec.jar (commons-codec:commons-codec:1.6)' completed
+19:57:22.776 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve trove4j.jar (net.sf.trove4j:trove4j:2.1.0)' completed
+19:57:22.776 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 7: acquired lock on root.1.2.9
+19:57:22.778 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.8 started (12 worker(s) in use).
+19:57:22.778 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 4: acquired lock on root.1.2.8
+19:57:22.779 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve httpcore.jar (org.apache.httpcomponents:httpcore:4.3.2)' completed
+19:57:22.779 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve forgeflower.jar (net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7)' completed
+19:57:22.779 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve localizer.jar (org.jvnet.localizer:localizer:1.12)' completed
+19:57:22.778 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Build operation root.1.2.6 could not be started (12 worker(s) in use).
+19:57:22.781 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve trove.jar (trove:trove:1.0.2)' completed
+19:57:22.781 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve named-regexp.jar (com.github.tony19:named-regexp:0.2.3)' completed
+19:57:22.781 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.3 completed (11 worker(s) in use)
+19:57:22.781 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve commons-logging.jar (commons-logging:commons-logging:1.1.3)' completed
+19:57:22.781 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve gson.jar (com.google.code.gson:gson:2.2.4)' completed
+19:57:22.781 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations: released lock on root.1.2.3
+19:57:22.781 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve lzma-java.jar (com.github.jponge:lzma-java:1.3)' completed
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.10 completed (9 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 8: released lock on root.1.2.10
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.7 completed (8 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 2: released lock on root.1.2.7
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.13 completed (7 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 12: released lock on root.1.2.13
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.15 completed (6 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 10: released lock on root.1.2.15
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.12 completed (5 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 3: released lock on root.1.2.12
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.8 completed (4 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 4: released lock on root.1.2.8
+19:57:22.783 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.6 started (5 worker(s) in use).
+19:57:22.783 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 11: acquired lock on root.1.2.6
+19:57:22.783 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.11 completed (4 worker(s) in use)
+19:57:22.783 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 5: released lock on root.1.2.11
+19:57:22.783 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.5 completed (3 worker(s) in use)
+19:57:22.783 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 9: released lock on root.1.2.5
+19:57:22.783 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.9 completed (2 worker(s) in use)
+19:57:22.783 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 7: released lock on root.1.2.9
+19:57:22.783 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve diff4j.jar (com.cloudbees:diff4j:1.1)' completed
+19:57:22.783 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.4 completed (1 worker(s) in use)
+19:57:22.783 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 6: released lock on root.1.2.4
+19:57:22.784 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.6 completed (1 worker(s) in use)
+19:57:22.784 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Build operations Thread 11: released lock on root.1.2.6
+19:57:22.681 [LIFECYCLE] [org.gradle.internal.logging.progress.ProgressLoggerFactory] 
+19:57:22.681 [LIFECYCLE] [org.gradle.internal.logging.progress.ProgressLoggerFactory] > Configure project :
+19:57:22.681 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Configure project :' started
+19:57:22.681 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Notify beforeEvaluate listeners of :' started
+19:57:22.681 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Notify beforeEvaluate listeners of :'
+19:57:22.682 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Notify beforeEvaluate listeners of :' completed
+19:57:22.682 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :init' started
+19:57:22.682 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :init'
+19:57:22.682 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :init' completed
+19:57:22.682 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :wrapper' started
+19:57:22.682 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :wrapper'
+19:57:22.683 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :wrapper' completed
+19:57:22.684 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Apply plugin org.gradle.help-tasks to root project 'Sowl'' started
+19:57:22.685 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :help' started
+19:57:22.685 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :help'
+19:57:22.685 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :help' completed
+19:57:22.685 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :projects' started
+19:57:22.686 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :projects'
+19:57:22.686 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :projects' completed
+19:57:22.686 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :tasks' started
+19:57:22.686 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :tasks'
+19:57:22.686 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :tasks' completed
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :properties' started
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :properties'
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :properties' completed
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :dependencyInsight' started
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :dependencyInsight'
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :dependencyInsight' completed
+19:57:22.687 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :dependencies' started
+19:57:22.688 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :dependencies'
+19:57:22.688 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :dependencies' completed
+19:57:22.688 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :buildEnvironment' started
+19:57:22.688 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :buildEnvironment'
+19:57:22.688 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :buildEnvironment' completed
+19:57:22.688 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :components' started
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :components'
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :components' completed
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :model' started
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :model'
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :model' completed
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :dependentComponents' started
+19:57:22.689 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Register task :dependentComponents'
+19:57:22.690 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Register task :dependentComponents' completed
+19:57:22.690 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Apply plugin org.gradle.help-tasks to root project 'Sowl''
+19:57:22.690 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Apply plugin org.gradle.help-tasks to root project 'Sowl'' completed
+19:57:22.690 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'Sowl' using build file 'C:\Users\User\Desktop\Sowl\build.gradle'.
+19:57:22.691 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Apply script build.gradle to root project 'Sowl'' started
+19:57:22.693 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: C:\Users\User\.m2\repository
+19:57:22.697 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md-supplier, path C:\Users\User\.gradle\caches\4.9\md-supplier\md-supplier.bin, access org.gradle.cache.internal.DefaultCacheAccess@13f12075
+19:57:22.698 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-supplier (C:\Users\User\.gradle\caches\4.9\md-supplier)
+19:57:22.699 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-supplier (C:\Users\User\.gradle\caches\4.9\md-supplier).
+19:57:22.700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-supplier (C:\Users\User\.gradle\caches\4.9\md-supplier).
+19:57:22.701 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md-rule, path C:\Users\User\.gradle\caches\4.9\md-rule\md-rule.bin, access org.gradle.cache.internal.DefaultCacheAccess@f589e10
+19:57:22.702 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-rule (C:\Users\User\.gradle\caches\4.9\md-rule)
+19:57:22.703 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-rule (C:\Users\User\.gradle\caches\4.9\md-rule).
+19:57:22.703 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-rule (C:\Users\User\.gradle\caches\4.9\md-rule).
+19:57:22.705 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-1.1/results, path C:\Users\User\.gradle\caches\transforms-1\metadata-1.1\results.bin, access org.gradle.cache.internal.DefaultCacheAccess@45746fbc
+19:57:22.706 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for Artifact transforms cache (C:\Users\User\.gradle\caches\transforms-1)
+19:57:22.706 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on Artifact transforms cache (C:\Users\User\.gradle\caches\transforms-1).
+19:57:22.707 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on Artifact transforms cache (C:\Users\User\.gradle\caches\transforms-1).
+19:57:22.707 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: C:\Users\User\Desktop\Sowl\gradle\dependency-locks
+19:57:22.709 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve dependencies of :classpath' started
+19:57:22.711 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultArtifactDependencyResolver] Resolving configuration ':classpath'
+19:57:22.712 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Creating new in-memory cache for repo 'maven' [42415b771632d9da5a677dda5c9bcd2f].
+19:57:22.712 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Creating new in-memory cache for repo 'MavenRepo' [f8e6315c37eb56998f7a5ba08e30db71].
+19:57:22.713 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration :Sowl:unspecified(classpath).
+19:57:22.714 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.DynamicVersionResolver] Attempting to resolve version for net.minecraftforge.gradle:ForgeGradle:2.3+ using repositories [maven, MavenRepo]
+19:57:22.714 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-2.58/module-versions, path C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-versions.bin, access org.gradle.cache.internal.DefaultCacheAccess@35d9ecf6
+19:57:22.714 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for artifact cache (C:\Users\User\.gradle\caches\modules-2)
+19:57:22.716 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (C:\Users\User\.gradle\caches\modules-2).
+19:57:22.717 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on artifact cache (C:\Users\User\.gradle\caches\modules-2).
+19:57:22.717 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-versions.bin (C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-versions.bin)
+19:57:22.723 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-2.58/module-metadata, path C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@35d9ecf6
+19:57:22.723 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-metadata.bin)
+19:57:22.725 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'net.minecraftforge.gradle:ForgeGradle:2.3.4' in 'maven'
+19:57:22.725 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.DynamicVersionResolver] Using net.minecraftforge.gradle:ForgeGradle:2.3.4 from Maven repository 'maven'
+19:57:22.726 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration net.minecraftforge.gradle:ForgeGradle:2.3.4(default).
+19:57:22.734 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.google.guava:guava:18.0 using repositories [maven, MavenRepo]
+19:57:22.734 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.google.guava:guava:18.0' in 'maven'
+19:57:22.734 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.google.guava:guava:18.0 from Maven repository 'maven'
+19:57:22.734 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for net.sf.opencsv:opencsv:2.3 using repositories [maven, MavenRepo]
+19:57:22.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'net.sf.opencsv:opencsv:2.3' in 'maven'
+19:57:22.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using net.sf.opencsv:opencsv:2.3 from Maven repository 'maven'
+19:57:22.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.cloudbees:diff4j:1.1 using repositories [maven, MavenRepo]
+19:57:22.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.cloudbees:diff4j:1.1' in 'maven'
+19:57:22.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.cloudbees:diff4j:1.1 from Maven repository 'maven'
+19:57:22.735 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.github.abrarsyed.jastyle:jAstyle:1.3 using repositories [maven, MavenRepo]
+19:57:22.736 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.github.abrarsyed.jastyle:jAstyle:1.3' in 'maven'
+19:57:22.736 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.github.abrarsyed.jastyle:jAstyle:1.3 from Maven repository 'maven'
+19:57:22.736 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for net.sf.trove4j:trove4j:2.1.0 using repositories [maven, MavenRepo]
+19:57:22.736 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'net.sf.trove4j:trove4j:2.1.0' in 'maven'
+19:57:22.736 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using net.sf.trove4j:trove4j:2.1.0 from Maven repository 'maven'
+19:57:22.737 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.github.jponge:lzma-java:1.3 using repositories [maven, MavenRepo]
+19:57:22.737 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.github.jponge:lzma-java:1.3' in 'maven'
+19:57:22.737 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.github.jponge:lzma-java:1.3 from Maven repository 'maven'
+19:57:22.737 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.nothome:javaxdelta:2.0.1 using repositories [maven, MavenRepo]
+19:57:22.737 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.nothome:javaxdelta:2.0.1' in 'maven'
+19:57:22.737 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.nothome:javaxdelta:2.0.1 from Maven repository 'maven'
+19:57:22.738 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.google.code.gson:gson:2.2.4 using repositories [maven, MavenRepo]
+19:57:22.738 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.google.code.gson:gson:2.2.4' in 'maven'
+19:57:22.738 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.google.code.gson:gson:2.2.4 from Maven repository 'maven'
+19:57:22.738 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.github.tony19:named-regexp:0.2.3 using repositories [maven, MavenRepo]
+19:57:22.738 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.github.tony19:named-regexp:0.2.3' in 'maven'
+19:57:22.738 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.github.tony19:named-regexp:0.2.3 from Maven repository 'maven'
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for net.minecraftforge:forgeflower:1.0.342-SNAPSHOT using repositories [maven, MavenRepo]
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found cached version of changing module 'net.minecraftforge:forgeflower:1.0.342-SNAPSHOT' in 'maven'
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'net.minecraftforge:forgeflower:1.0.342-SNAPSHOT' in 'maven'
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using net.minecraftforge:forgeflower:1.0.342-SNAPSHOT from Maven repository 'maven'
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for org.apache.httpcomponents:httpclient:4.3.3 using repositories [maven, MavenRepo]
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'org.apache.httpcomponents:httpclient:4.3.3' in 'maven'
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using org.apache.httpcomponents:httpclient:4.3.3 from Maven repository 'maven'
+19:57:22.739 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for org.apache.httpcomponents:httpmime:4.3.3 using repositories [maven, MavenRepo]
+19:57:22.740 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'org.apache.httpcomponents:httpmime:4.3.3' in 'maven'
+19:57:22.740 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using org.apache.httpcomponents:httpmime:4.3.3 from Maven repository 'maven'
+19:57:22.740 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.google.guava:guava:18.0(runtime).
+19:57:22.741 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration net.sf.opencsv:opencsv:2.3(runtime).
+19:57:22.741 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.cloudbees:diff4j:1.1(runtime).
+19:57:22.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for org.jvnet.localizer:localizer:1.12 using repositories [maven, MavenRepo]
+19:57:22.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'org.jvnet.localizer:localizer:1.12' in 'maven'
+19:57:22.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using org.jvnet.localizer:localizer:1.12 from Maven repository 'maven'
+19:57:22.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for commons-io:commons-io:1.4 using repositories [maven, MavenRepo]
+19:57:22.743 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'commons-io:commons-io:1.4' in 'maven'
+19:57:22.744 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using commons-io:commons-io:1.4 from Maven repository 'maven'
+19:57:22.744 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.github.abrarsyed.jastyle:jAstyle:1.3(runtime).
+19:57:22.744 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration net.sf.trove4j:trove4j:2.1.0(runtime).
+19:57:22.744 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.github.jponge:lzma-java:1.3(runtime).
+19:57:22.744 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.nothome:javaxdelta:2.0.1(runtime).
+19:57:22.745 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for trove:trove:1.0.2 using repositories [maven, MavenRepo]
+19:57:22.745 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'trove:trove:1.0.2' in 'maven'
+19:57:22.746 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using trove:trove:1.0.2 from Maven repository 'maven'
+19:57:22.746 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.google.code.gson:gson:2.2.4(runtime).
+19:57:22.746 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration com.github.tony19:named-regexp:0.2.3(runtime).
+19:57:22.746 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration net.minecraftforge:forgeflower:1.0.342-SNAPSHOT(runtime).
+19:57:22.746 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpclient:4.3.3(runtime).
+19:57:22.749 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for org.apache.httpcomponents:httpcore:4.3.2 using repositories [maven, MavenRepo]
+19:57:22.749 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'org.apache.httpcomponents:httpcore:4.3.2' in 'maven'
+19:57:22.749 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using org.apache.httpcomponents:httpcore:4.3.2 from Maven repository 'maven'
+19:57:22.749 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for commons-logging:commons-logging:1.1.3 using repositories [maven, MavenRepo]
+19:57:22.749 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'commons-logging:commons-logging:1.1.3' in 'maven'
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using commons-logging:commons-logging:1.1.3 from Maven repository 'maven'
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for commons-codec:commons-codec:1.6 using repositories [maven, MavenRepo]
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'commons-codec:commons-codec:1.6' in 'maven'
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using commons-codec:commons-codec:1.6 from Maven repository 'maven'
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpmime:4.3.3(runtime).
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration org.jvnet.localizer:localizer:1.12(runtime).
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration commons-io:commons-io:1.4(runtime).
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration trove:trove:1.0.2(runtime).
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpcore:4.3.2(runtime).
+19:57:22.750 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration commons-logging:commons-logging:1.1.3(runtime).
+19:57:22.751 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration commons-codec:commons-codec:1.6(runtime).
+19:57:22.751 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration org.apache.httpcomponents:httpclient:4.3.3(runtime).
+19:57:22.751 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Changed edges for org.apache.httpcomponents:httpclient:4.3.3(runtime) selects same versions as previous traversal. ignoring
+19:57:22.757 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientConfigurationResultsBuilder] Flushing resolved configuration data in Binary store in C:\Users\User\AppData\Local\Temp\gradle7805292752607040026.bin. Wrote root 2.
+19:57:22.758 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve dependencies of :classpath'
+19:57:22.758 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve dependencies of :classpath' completed
+19:57:22.759 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.minecraftforge.gradle:ForgeGradle:2.3.4 configuration default from candidates [net.minecraftforge.gradle:ForgeGradle:2.3.4 configuration default] for {}
+19:57:22.759 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.google.guava:guava:18.0 configuration runtime from candidates [com.google.guava:guava:18.0 configuration runtime] for {}
+19:57:22.759 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.sf.opencsv:opencsv:2.3 configuration runtime from candidates [net.sf.opencsv:opencsv:2.3 configuration runtime] for {}
+19:57:22.759 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.cloudbees:diff4j:1.1 configuration runtime from candidates [com.cloudbees:diff4j:1.1 configuration runtime] for {}
+19:57:22.759 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.github.abrarsyed.jastyle:jAstyle:1.3 configuration runtime from candidates [com.github.abrarsyed.jastyle:jAstyle:1.3 configuration runtime] for {}
+19:57:22.760 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.sf.trove4j:trove4j:2.1.0 configuration runtime from candidates [net.sf.trove4j:trove4j:2.1.0 configuration runtime] for {}
+19:57:22.760 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.github.jponge:lzma-java:1.3 configuration runtime from candidates [com.github.jponge:lzma-java:1.3 configuration runtime] for {}
+19:57:22.760 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.nothome:javaxdelta:2.0.1 configuration runtime from candidates [com.nothome:javaxdelta:2.0.1 configuration runtime] for {}
+19:57:22.760 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.google.code.gson:gson:2.2.4 configuration runtime from candidates [com.google.code.gson:gson:2.2.4 configuration runtime] for {}
+19:57:22.760 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.github.tony19:named-regexp:0.2.3 configuration runtime from candidates [com.github.tony19:named-regexp:0.2.3 configuration runtime] for {}
+19:57:22.760 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7 configuration runtime from candidates [net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.apache.httpcomponents:httpmime:4.3.3 configuration runtime from candidates [org.apache.httpcomponents:httpmime:4.3.3 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.apache.httpcomponents:httpclient:4.3.3 configuration runtime from candidates [org.apache.httpcomponents:httpclient:4.3.3 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.jvnet.localizer:localizer:1.12 configuration runtime from candidates [org.jvnet.localizer:localizer:1.12 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match commons-io:commons-io:1.4 configuration runtime from candidates [commons-io:commons-io:1.4 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match trove:trove:1.0.2 configuration runtime from candidates [trove:trove:1.0.2 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.apache.httpcomponents:httpcore:4.3.2 configuration runtime from candidates [org.apache.httpcomponents:httpcore:4.3.2 configuration runtime] for {}
+19:57:22.761 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match commons-logging:commons-logging:1.1.3 configuration runtime from candidates [commons-logging:commons-logging:1.1.3 configuration runtime] for {}
+19:57:22.762 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match commons-codec:commons-codec:1.6 configuration runtime from candidates [commons-codec:commons-codec:1.6 configuration runtime] for {}
+19:57:22.762 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' started
+19:57:22.764 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve ForgeGradle.jar (net.minecraftforge.gradle:ForgeGradle:2.3.4)' started
+19:57:22.765 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for metadata-2.58/module-artifact, path C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-artifact.bin, access org.gradle.cache.internal.DefaultCacheAccess@35d9ecf6
+19:57:22.765 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-artifact.bin (C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-artifact.bin)
+19:57:22.765 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve guava.jar (com.google.guava:guava:18.0)' started
+19:57:22.766 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve opencsv.jar (net.sf.opencsv:opencsv:2.3)' started
+19:57:22.767 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve jAstyle.jar (com.github.abrarsyed.jastyle:jAstyle:1.3)' started
+19:57:22.767 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'ForgeGradle.jar (net.minecraftforge.gradle:ForgeGradle:2.3.4)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\net.minecraftforge.gradle\ForgeGradle\2.3.4\d26d73dd46e54d4f633edb17ab8c1efd90c7604e\ForgeGradle-2.3.4.jar
+19:57:22.767 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve ForgeGradle.jar (net.minecraftforge.gradle:ForgeGradle:2.3.4)'
+19:57:22.767 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'jAstyle.jar (com.github.abrarsyed.jastyle:jAstyle:1.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.github.abrarsyed.jastyle\jAstyle\1.3\42431e5834cfb184d60be4142e2806cf2d806ea\jAstyle-1.3.jar
+19:57:22.767 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve javaxdelta.jar (com.nothome:javaxdelta:2.0.1)' started
+19:57:22.769 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'opencsv.jar (net.sf.opencsv:opencsv:2.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\net.sf.opencsv\opencsv\2.3\c23708cdb9e80a144db433e23344a788a1fd6599\opencsv-2.3.jar
+19:57:22.768 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.14 started (7 worker(s) in use).
+19:57:22.769 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 2: acquired lock on root.1.2.14
+19:57:22.768 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'guava.jar (com.google.guava:guava:18.0)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\18.0\cce0823396aa693798f8882e64213b1772032b09\guava-18.0.jar
+19:57:22.768 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve jAstyle.jar (com.github.abrarsyed.jastyle:jAstyle:1.3)'
+19:57:22.769 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve guava.jar (com.google.guava:guava:18.0)'
+19:57:22.769 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve httpmime.jar (org.apache.httpcomponents:httpmime:4.3.3)' started
+19:57:22.769 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'javaxdelta.jar (com.nothome:javaxdelta:2.0.1)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.nothome\javaxdelta\2.0.1\d4f5d077f1b15c6f67595015d69572303ad3f66d\javaxdelta-2.0.1.jar
+19:57:22.769 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve opencsv.jar (net.sf.opencsv:opencsv:2.3)'
+19:57:22.771 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'httpmime.jar (org.apache.httpcomponents:httpmime:4.3.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.3.3\e02368d7b56c0c376f227378a4f77de62864d020\httpmime-4.3.3.jar
+19:57:22.771 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve httpmime.jar (org.apache.httpcomponents:httpmime:4.3.3)'
+19:57:22.771 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve javaxdelta.jar (com.nothome:javaxdelta:2.0.1)'
+19:57:22.773 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve trove4j.jar (net.sf.trove4j:trove4j:2.1.0)' started
+19:57:22.771 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve httpclient.jar (org.apache.httpcomponents:httpclient:4.3.3)' started
+19:57:22.773 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'trove4j.jar (net.sf.trove4j:trove4j:2.1.0)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\2.1.0\c82f2749a460b95de4c9d2466b62f18c23c7c914\trove4j-2.1.0.jar
+19:57:22.774 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve trove4j.jar (net.sf.trove4j:trove4j:2.1.0)'
+19:57:22.775 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve commons-io.jar (commons-io:commons-io:1.4)' started
+19:57:22.771 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve localizer.jar (org.jvnet.localizer:localizer:1.12)' started
+19:57:22.775 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve forgeflower.jar (net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7)' started
+19:57:22.776 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'commons-io.jar (commons-io:commons-io:1.4)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\1.4\a8762d07e76cfde2395257a5da47ba7c1dbd3dce\commons-io-1.4.jar
+19:57:22.776 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve commons-io.jar (commons-io:commons-io:1.4)'
+19:57:22.776 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve commons-codec.jar (commons-codec:commons-codec:1.6)' started
+19:57:22.774 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve gson.jar (com.google.code.gson:gson:2.2.4)' started
+19:57:22.774 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve trove.jar (trove:trove:1.0.2)' started
+19:57:22.774 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'httpclient.jar (org.apache.httpcomponents:httpclient:4.3.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+19:57:22.777 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve httpcore.jar (org.apache.httpcomponents:httpcore:4.3.2)' started
+19:57:22.777 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve httpclient.jar (org.apache.httpcomponents:httpclient:4.3.3)'
+19:57:22.777 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'commons-codec.jar (commons-codec:commons-codec:1.6)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.6\b7f0fc8f61ecadeb3695f0b9464755eee44374d4\commons-codec-1.6.jar
+19:57:22.777 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve commons-codec.jar (commons-codec:commons-codec:1.6)'
+19:57:22.776 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'forgeflower.jar (net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgeflower\1.0.342-SNAPSHOT\83b7d227aa011da5f140558240149ed26a0f5d76\forgeflower-1.0.342-SNAPSHOT.jar
+19:57:22.778 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'httpcore.jar (org.apache.httpcomponents:httpcore:4.3.2)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+19:57:22.776 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'localizer.jar (org.jvnet.localizer:localizer:1.12)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\org.jvnet.localizer\localizer\1.12\6d456886a035b2c3f758059da1f91a823eaa4a62\localizer-1.12.jar
+19:57:22.778 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve commons-logging.jar (commons-logging:commons-logging:1.1.3)' started
+19:57:22.778 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve localizer.jar (org.jvnet.localizer:localizer:1.12)'
+19:57:22.778 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve named-regexp.jar (com.github.tony19:named-regexp:0.2.3)' started
+19:57:22.778 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve httpcore.jar (org.apache.httpcomponents:httpcore:4.3.2)'
+19:57:22.778 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve forgeflower.jar (net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7)'
+19:57:22.777 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve httpclient.jar (org.apache.httpcomponents:httpclient:4.3.3)' completed
+19:57:22.777 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'trove.jar (trove:trove:1.0.2)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\trove\trove\1.0.2\112b40581ab9a4d3de4636d49985a7f686d181c8\trove-1.0.2.jar
+19:57:22.777 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'gson.jar (com.google.code.gson:gson:2.2.4)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar
+19:57:22.780 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve trove.jar (trove:trove:1.0.2)'
+19:57:22.779 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'named-regexp.jar (com.github.tony19:named-regexp:0.2.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.github.tony19\named-regexp\0.2.3\370846bf3837952d981deb8f91e81da8c65b09e1\named-regexp-0.2.3.jar
+19:57:22.779 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'commons-logging.jar (commons-logging:commons-logging:1.1.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+19:57:22.780 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve lzma-java.jar (com.github.jponge:lzma-java:1.3)' started
+19:57:22.780 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve commons-logging.jar (commons-logging:commons-logging:1.1.3)'
+19:57:22.780 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve named-regexp.jar (com.github.tony19:named-regexp:0.2.3)'
+19:57:22.780 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve gson.jar (com.google.code.gson:gson:2.2.4)'
+19:57:22.781 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'lzma-java.jar (com.github.jponge:lzma-java:1.3)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.github.jponge\lzma-java\1.3\a25db9d4d385ccda4825ae1b47a7a61d86e595af\lzma-java-1.3.jar
+19:57:22.781 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve lzma-java.jar (com.github.jponge:lzma-java:1.3)'
+19:57:22.782 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1.2.14 completed (10 worker(s) in use)
+19:57:22.782 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 2: released lock on root.1.2.14
+19:57:22.783 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve diff4j.jar (com.cloudbees:diff4j:1.1)' started
+19:57:22.783 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'diff4j.jar (com.cloudbees:diff4j:1.1)' in resolver cache: C:\Users\User\.gradle\caches\modules-2\files-2.1\com.cloudbees\diff4j\1.1\645329c0d4ebbea5f73758929c6e63bab9e77204\diff4j-1.1.jar
+19:57:22.783 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve diff4j.jar (com.cloudbees:diff4j:1.1)'
+19:57:22.784 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve files of :classpath'
+19:57:22.784 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' completed
+19:57:22.784 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.minecraftforge.gradle:ForgeGradle:2.3.4 configuration default from candidates [net.minecraftforge.gradle:ForgeGradle:2.3.4 configuration default] for {}
+19:57:22.784 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.google.guava:guava:18.0 configuration runtime from candidates [com.google.guava:guava:18.0 configuration runtime] for {}
+19:57:22.784 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.sf.opencsv:opencsv:2.3 configuration runtime from candidates [net.sf.opencsv:opencsv:2.3 configuration runtime] for {}
+19:57:22.784 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.cloudbees:diff4j:1.1 configuration runtime from candidates [com.cloudbees:diff4j:1.1 configuration runtime] for {}
+19:57:22.784 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.github.abrarsyed.jastyle:jAstyle:1.3 configuration runtime from candidates [com.github.abrarsyed.jastyle:jAstyle:1.3 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.sf.trove4j:trove4j:2.1.0 configuration runtime from candidates [net.sf.trove4j:trove4j:2.1.0 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.github.jponge:lzma-java:1.3 configuration runtime from candidates [com.github.jponge:lzma-java:1.3 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.nothome:javaxdelta:2.0.1 configuration runtime from candidates [com.nothome:javaxdelta:2.0.1 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.google.code.gson:gson:2.2.4 configuration runtime from candidates [com.google.code.gson:gson:2.2.4 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match com.github.tony19:named-regexp:0.2.3 configuration runtime from candidates [com.github.tony19:named-regexp:0.2.3 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7 configuration runtime from candidates [net.minecraftforge:forgeflower:1.0.342-SNAPSHOT:20171208.041249-7 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.apache.httpcomponents:httpmime:4.3.3 configuration runtime from candidates [org.apache.httpcomponents:httpmime:4.3.3 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.apache.httpcomponents:httpclient:4.3.3 configuration runtime from candidates [org.apache.httpcomponents:httpclient:4.3.3 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.jvnet.localizer:localizer:1.12 configuration runtime from candidates [org.jvnet.localizer:localizer:1.12 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match commons-io:commons-io:1.4 configuration runtime from candidates [commons-io:commons-io:1.4 configuration runtime] for {}
+19:57:22.785 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match trove:trove:1.0.2 configuration runtime from candidates [trove:trove:1.0.2 configuration runtime] for {}
+19:57:22.786 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match org.apache.httpcomponents:httpcore:4.3.2 configuration runtime from candidates [org.apache.httpcomponents:httpcore:4.3.2 configuration runtime] for {}
+19:57:22.786 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match commons-logging:commons-logging:1.1.3 configuration runtime from candidates [commons-logging:commons-logging:1.1.3 configuration runtime] for {}
+19:57:22.786 [DEBUG] [org.gradle.internal.component.model.ComponentAttributeMatcher] Selected match commons-codec:commons-codec:1.6 configuration runtime from candidates [commons-codec:commons-codec:1.6 configuration runtime] for {}
+19:57:22.786 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' started
+19:57:22.786 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Resolve files of :classpath'
+19:57:22.786 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Resolve files of :classpath' completed
+19:57:22.798 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Apply script build.gradle to root project 'Sowl''
+19:57:22.798 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Apply script build.gradle to root project 'Sowl'' completed
+19:57:22.798 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 0.107 secs
+19:57:22.798 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Notify afterEvaluate listeners of :' started
+19:57:22.798 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Notify afterEvaluate listeners of :'
+19:57:22.799 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Notify afterEvaluate listeners of :' completed
+19:57:22.799 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Configure project :'
+19:57:22.799 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Configure project :' completed
+19:57:22.799 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Configure build'
+19:57:22.799 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Configure build' completed
+19:57:22.816 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 completed (0 worker(s) in use)
+19:57:22.816 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker Thread 2: released lock on root.1
+19:57:22.816 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Completing Build operation 'Run build'
+19:57:22.816 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationExecutor] Build operation 'Run build' completed
+19:57:22.819 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-supplier (C:\Users\User\.gradle\caches\4.9\md-supplier)
+19:57:22.819 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-supplier (C:\Users\User\.gradle\caches\4.9\md-supplier).
+19:57:22.820 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-rule (C:\Users\User\.gradle\caches\4.9\md-rule)
+19:57:22.820 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-rule (C:\Users\User\.gradle\caches\4.9\md-rule).
+19:57:22.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+19:57:22.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+19:57:22.822 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.001 secs
+19:57:22.823 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (C:\Users\User\.gradle\caches\transforms-1)
+19:57:22.824 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (C:\Users\User\.gradle\caches\transforms-1).
+19:57:22.825 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopping 0 deployment handles
+19:57:22.825 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopped deployment handles
+19:57:22.826 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (C:\Users\User\Desktop\Sowl\.gradle\4.9\fileHashes)
+19:57:22.826 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (C:\Users\User\Desktop\Sowl\.gradle\4.9\fileHashes).
+19:57:22.827 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryCache] VCS Checkout Cache (C:\Users\User\Desktop\Sowl\.gradle\vcsWorkingDirs) has last been cleaned up 21 hours ago
+19:57:22.827 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache VCS Checkout Cache (C:\Users\User\Desktop\Sowl\.gradle\vcsWorkingDirs) was closed 0 times.
+19:57:22.827 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (C:\Users\User\.gradle\caches\modules-2)
+19:57:22.827 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-metadata.bin)
+19:57:22.827 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-versions.bin (C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-versions.bin)
+19:57:22.827 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (C:\Users\User\.gradle\caches\modules-2\metadata-2.58\module-artifact.bin)
+19:57:22.828 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (C:\Users\User\.gradle\caches\modules-2).
+19:57:22.831 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+19:57:22.879 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientInputForwarder] Dispatching close input message: org.gradle.launcher.daemon.protocol.CloseInput@756e5fa1
+19:57:22.879 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.CloseInput
+19:57:22.880 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result Failure[value=org.gradle.initialization.ReportedException: org.gradle.internal.exceptions.LocationAwareException: Build file 'C:\Users\User\Desktop\Sowl\build.gradle' line: 12
+A problem occurred evaluating root project 'Sowl'.] from daemon DaemonInfo{pid=4732, address=[b1378a92-bb6a-4690-afb4-e12d61fb151d port:62574, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], state=Idle, lastBusy=1743346477932, context=DefaultDaemonContext[uid=b4864c38-eb5c-47ef-80e8-d4c96579623f,javaHome=C:\Program Files\Java\jdk1.8.0_202,daemonRegistryDir=C:\Users\User\.gradle\daemon,pid=4732,idleTimeout=10800000,daemonOpts=-Xmx2G,-Dfile.encoding=windows-1251,-Duser.country=RU,-Duser.language=ru,-Duser.variant]} (build should be done).
+19:57:22.880 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Finished
+19:57:22.881 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: connection stop
