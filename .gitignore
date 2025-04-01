@@ -1,0 +1,29 @@
+# IDE
+/.idea/
+/*.iml
+/*.ipr
+/*.iws
+/.settings/
+/.classpath
+/.project
+/.metadata/
+
+# Build
+/build/
+/bin/
+/out/
+/.gradle/
+/gradle/
+/gradlew
+/gradlew.bat
+
+# Eclipse
+/eclipse/
+*.launch
+
+# Конфиги с API-ключами
+/src/main/java/com/example/libvos/config.json  # Ваш конфиг с ключом
+
+# Логи и кеш
+/logs/
+/.cache/
