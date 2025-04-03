@@ -22,7 +22,7 @@
 *.launch
 
 # Конфиги с API-ключами
-/src/main/java/com/example/libvos/config.json  # Ваш конфиг с ключом
+C:\Users\User\Desktop\Sowl\src\main\java\com\example\iliwoS\config.json 
 
 # Логи и кеш
 /logs/

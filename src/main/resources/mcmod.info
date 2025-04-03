@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "modid": "iliwos",
+  "name": "iliwoS",
+  "description": "",
+  "version": "${1.0}",
+  "mcversion": "${1.8.9}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Sowuli"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
