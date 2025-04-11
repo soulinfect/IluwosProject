@@ -1,11 +1,11 @@
-package com.IluProject.IluwosProject;
+package com.Iluwos;
 
 public class IluwoSLogger {
-    private static final String PREFIX = "[IluP] "; // общий префикс для всех логов
+    private static final String PREFIX = "[IluP] "; 
     private static final String DEBUG = "[DEBUG] ";
     private static final String INFO = "[INFO] ";
     private static final String ERROR = "[ERROR] ";
-    private static final String TAG = "iluwosproject"; // уникальная строка для поиска в логах
+    private static final String TAG = "iluwosproject"; 
 
     public static void debug(String message) {
         System.out.println(PREFIX + DEBUG + message + " - " + TAG);

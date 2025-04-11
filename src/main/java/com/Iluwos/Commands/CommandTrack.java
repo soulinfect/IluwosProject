@@ -1,10 +1,14 @@
-package com.IluProject.IluwosProject.commands;
+package com.Iluwos.commands;
 
-import com.IluProject.IluwosProject.HypixelApiUtils;
-import com.IluProject.IluwosProject.IluwoSLogger;
+import com.Iluwos.HypixelApiUtils;
+import com.Iluwos.IluwoSLogger;
+import com.Iluwos.ModConfig;
+import com.Iluwos.ConfigManager;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import java.lang.Thread;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -31,42 +35,66 @@ public class CommandTrack extends CommandBase {
             sender.addChatMessage(new ChatComponentText("[IluP] Please enter the item name"));
             return;
         }
-
-        if (sender instanceof EntityPlayer) {
+        ModConfig config = ConfigManager.loadConfig();
+        if (args[0].equals("stop")) {
+            if (!config.get_tracking_status()) {
+                sender.addChatMessage(new ChatComponentText("[IluP] Tracking has already been stopped!"));
+                return;
+            }
+            sender.addChatMessage(new ChatComponentText("[IluP] Tracking stopped!"));
+            config.set_tracking_status(false);
+            ConfigManager.saveConfig(config);
+            return;
+        } else if (args[0].equals("start")) {
+            if (config.get_tracking_status()) {
+                sender.addChatMessage(new ChatComponentText("[IluP] Tracking is already underway!"));
+                return;
+            }
+            sender.addChatMessage(new ChatComponentText("[IluP] Tracking started!"));
+            config.set_tracking_status(true);
+            ConfigManager.saveConfig(config);
+            return;
+        } else if (sender instanceof EntityPlayer) {
             UUID raw_uuid = ((EntityPlayer) sender).getUniqueID();
             String uuid = raw_uuid.toString().replace("-", "");
+
             String item = args[0].toUpperCase();
-
-            new Thread(() -> {
-                String jsonResponse = HypixelApiUtils.getProfilesData(uuid);
-                int activeProfileIndex = HypixelApiUtils.findActiveProfileIndex(jsonResponse);
-
-                if (activeProfileIndex == -1) {
-                    sender.addChatMessage(new ChatComponentText("[IluP] No active profile found!"));
-                    return;
-                }
-
-                try {
-                    JsonObject response = new JsonParser().parse(jsonResponse).getAsJsonObject();
-                    JsonObject profile = response.getAsJsonArray("profiles").get(activeProfileIndex).getAsJsonObject();
-                    JsonObject members = profile.getAsJsonObject("members");
-                    JsonObject userData = members.getAsJsonObject(uuid);
-                    JsonObject inventory = userData.getAsJsonObject("inventory");
-                    JsonObject sacksCounts = inventory.getAsJsonObject("sacks_counts");
-
-                    if (sacksCounts == null || !sacksCounts.has(item)) {
-                        sender.addChatMessage(new ChatComponentText("[IluP] Item " + item + " not found in your sacks!"));
+            if (config.getItems().containsKey(item)) {
+                sender.addChatMessage(new ChatComponentText("[IluP] This item is already being tracked."));
+                return;
+            } else {
+                new Thread(() -> {
+                    String jsonResponse = HypixelApiUtils.getProfilesData(uuid);
+                    int activeProfileIndex = HypixelApiUtils.findActiveProfileIndex(jsonResponse);
+            
+                    if (activeProfileIndex == -1) {
+                        sender.addChatMessage(new ChatComponentText("[IluP] No active profile found!"));
                         return;
                     }
-
-                    String itemCount = sacksCounts.get(item).getAsString();
-                    sender.addChatMessage(new ChatComponentText("[IluP] " + item + " count: " + itemCount));
-
-                } catch (Exception e) {
-                    sender.addChatMessage(new ChatComponentText("[IluP] An error occurred: " + e.getMessage()));
-                    IluwoSLogger.error("Error in /track", e);
-                }
-            }).start();
+            
+                    try {
+                        JsonObject response = new JsonParser().parse(jsonResponse).getAsJsonObject();
+                        JsonObject profile = response.getAsJsonArray("profiles").get(activeProfileIndex).getAsJsonObject();
+                        JsonObject members = profile.getAsJsonObject("members");
+                        JsonObject userData = members.getAsJsonObject(uuid);
+                        JsonObject inventory = userData.getAsJsonObject("inventory");
+                        JsonObject sacksCounts = inventory.getAsJsonObject("sacks_counts");
+            
+                        if (sacksCounts == null || !sacksCounts.has(item)) {
+                            sender.addChatMessage(new ChatComponentText("[IluP] Item " + item + " not found in your sacks!"));
+                            return;
+                        }
+            
+                        String itemCount = sacksCounts.get(item).getAsString();
+                        sender.addChatMessage(new ChatComponentText("[IluP] " + item + " count: " + itemCount));
+                        config.getItems().put(item, Integer.parseInt(itemCount));
+                        ConfigManager.saveConfig(config);
+                    } catch (Exception e) {
+                        sender.addChatMessage(new ChatComponentText("[IluP] An error occurred: " + e.getMessage()));
+                        IluwoSLogger.error("Error in /track", e);
+                    }
+                }).start();
+            }
         }
     }
 
