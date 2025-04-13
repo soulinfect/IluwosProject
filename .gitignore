@@ -1,0 +1,29 @@
+# IDE
+/.idea/
+/*.iml
+/*.ipr
+/*.iws
+/.settings/
+/.classpath
+/.project
+/.metadata/
+
+# Build
+/build/
+/bin/
+/out/
+/.gradle/
+/gradle/
+/gradlew
+/gradlew.bat
+
+# Eclipse
+/eclipse/
+*.launch
+
+# Конфиг
+/src/main/resources/
+
+# Логи и кеш
+/logs/
+/.cache/
