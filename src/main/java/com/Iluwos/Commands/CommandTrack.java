@@ -26,7 +26,7 @@ public class CommandTrack extends CommandBase {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/track [item_name]";
+        return "/track [item_name]\n/track stop\n/track start";
     }
 
     @Override
@@ -86,7 +86,7 @@ public class CommandTrack extends CommandBase {
                         }
             
                         String itemCount = sacksCounts.get(item).getAsString();
-                        sender.addChatMessage(new ChatComponentText("[IluP] " + item + " count: " + itemCount));
+                        sender.addChatMessage(new ChatComponentText("[IluP] Item succesfully added! " + item + " count: " + itemCount));
                         config.getItems().put(item, Integer.parseInt(itemCount));
                         ConfigManager.saveConfig(config);
                     } catch (Exception e) {

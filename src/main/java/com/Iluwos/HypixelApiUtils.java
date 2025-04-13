@@ -71,7 +71,7 @@ public class HypixelApiUtils {
                 connection.setReadTimeout(10000);
 
                 int responseCode = connection.getResponseCode();
-                IluwoSLogger.debug("HTTP Response Code: " + responseCode);
+                //IluwoSLogger.debug("HTTP Response Code: " + responseCode);
 
                 if (responseCode != HttpURLConnection.HTTP_OK) {
                     throw new IOException("HTTP error code: " + responseCode);
@@ -118,7 +118,7 @@ public class HypixelApiUtils {
             for (int i = 0; i < profiles.size(); i++) {
                 JsonObject profile = profiles.get(i).getAsJsonObject();
                 if (profile.has("selected") && profile.get("selected").getAsBoolean()) {
-                    IluwoSLogger.info("Active profile found! Index: " + i);
+                    //IluwoSLogger.info("Active profile found! Index: " + i);
                     return i;
                 }
             }
@@ -137,16 +137,14 @@ public class HypixelApiUtils {
         CountDownLatch latch = new CountDownLatch(1);
         try {
             String apiKey = loadApiKey();
-            String[] _ItemNamesArray = IluwoS.ItemNamesArray.toArray(new String[0]);
-            Integer[] _ItemCountsArray = IluwoS.ItemCountsArray.toArray(new Integer[0]);
-            int[] newItemCountArray = new int[_ItemNamesArray.length];
+            int[] newItemCountArray = new int[IluwoS.ItemNamesArray.size()];
             UUID raw_uuid = player.getUniqueID();
             String uuid = raw_uuid.toString().replace("-", "");
-
+    
             new Thread(() -> {
                 String jsonResponse = HypixelApiUtils.getProfilesData(uuid);
                 int activeProfileIndex = HypixelApiUtils.findActiveProfileIndex(jsonResponse);
-            
+    
                 if (activeProfileIndex == -1) {
                     Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new ChatComponentText("[IluP] No active profile found!"));
                     return; 
@@ -159,12 +157,12 @@ public class HypixelApiUtils {
                     JsonObject inventory = userData.getAsJsonObject("inventory");
                     JsonObject sacksCounts = inventory.getAsJsonObject("sacks_counts");
                     int itemCount;
-                    for (int i = 0; i < _ItemNamesArray.length; i++) {
-                        if (sacksCounts == null || !sacksCounts.has(_ItemNamesArray[i])) {
+                    for (int i = 0; i < IluwoS.ItemNamesArray.size(); i++) {
+                        if (sacksCounts == null || !sacksCounts.has(IluwoS.ItemNamesArray.get(i))) {
                             return;
                         }
-                        
-                        itemCount = sacksCounts.get(_ItemNamesArray[i]).getAsInt();
+    
+                        itemCount = sacksCounts.get(IluwoS.ItemNamesArray.get(i)).getAsInt();
                         newItemCountArray[i] = itemCount;
                     }
                 } catch (Exception e) {
@@ -172,24 +170,38 @@ public class HypixelApiUtils {
                     IluwoSLogger.error("Error in /track", e);
                     return;
                 }
+    
                 StringBuilder msg = new StringBuilder();
+                boolean msgUpdate = false;
+    
                 for (int i = 0; i < newItemCountArray.length; i++) {
-                    msg.append("[IluP] ")
-                    .append(_ItemNamesArray[i])
-                    .append(": ")
-                    .append(_ItemCountsArray[i])
-                    .append(" -> ")
-                    .append(newItemCountArray[i])
-                    .append("\n");
+                    mc.ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(IluwoS.ItemNamesArray.get(i) + ": " + IluwoS.ItemCountsArray.get(i) + " -> " + newItemCountArray[i]));
+                    if (newItemCountArray[i] != IluwoS.ItemCountsArray.get(i)) {
+                        msgUpdate = true;
+                        msg.append("[IluP] ");
+                        msg.append(IluwoS.ItemNamesArray.get(i));
+    
+                        int difference = newItemCountArray[i] - IluwoS.ItemCountsArray.get(i);
+                        if (difference > 0) {
+                            msg.append(" \u00A7a[+");
+                            msg.append(difference);
+                            msg.append("]");
+                        } else {
+                            msg.append(" \u00A7c[");
+                            msg.append(difference);
+                            msg.append("]");
+                        }
+                        IluwoS.ItemCountsArray.set(i, newItemCountArray[i]);
+                        msg.append("\n");  
+                    }
                 }
-
-                if (!IluwoS.lastMessage.isEmpty()) {
-                    mc.ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(new ChatComponentText(""), 1781);
+                if (msgUpdate) {
+                    if (!IluwoS.lastMessage.isEmpty()) {
+                        mc.ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(new ChatComponentText(""), 2376);
+                    }
+                    mc.ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(new ChatComponentText(msg.toString()), 2376);
+                    IluwoS.lastMessage = msg.toString();
                 }
-
-                mc.ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(new ChatComponentText(msg.toString()), 1781);
-
-                IluwoS.lastMessage = msg.toString();
             }).start(); 
         } catch (IOException e) {
             IluwoSLogger.error("Error with config reader: ", e);
@@ -199,5 +211,6 @@ public class HypixelApiUtils {
             return;
         }
     }
+    
 }
 

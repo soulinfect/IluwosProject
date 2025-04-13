@@ -21,7 +21,7 @@ import java.util.Map;
 @Mod(modid = IluwoS.MODID, version = IluwoS.VERSION, acceptedMinecraftVersions = "[1.8.9]")
 public class IluwoS {
     public static final String MODID = "iluwos";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "0.1";
 
     public static ArrayList<String> ItemNamesArray = new ArrayList<>();
     public static ArrayList<Integer> ItemCountsArray = new ArrayList<>();
@@ -40,9 +40,7 @@ public class IluwoS {
         for (Map.Entry<String, Integer> entry : items.entrySet()) {
             ItemNamesArray.add(entry.getKey());
             ItemCountsArray.add(entry.getValue());
-            IluwoSLogger.info("Detected item: " + entry.getKey() + ", Count: " + entry.getValue());
         }
-
         IluwoSLogger.info("IluwoS has been successfully initialized!");
     }
 
@@ -59,7 +57,7 @@ public class IluwoS {
 
         tickCounter++;
 
-        if (tickCounter >= 50) {
+        if (tickCounter >= 200) {
             tickCounter = 0;
 
             if (ItemNamesArray.isEmpty() || ItemCountsArray.isEmpty()) {
@@ -71,7 +69,8 @@ public class IluwoS {
         }
     }
 }
-// если профиль не найден то закончить проверять
 // команда для вывода списка всех предметов
 // поменять таймер
-// выключить тракинг
+// пустая строка
+// убрать постоянный вывод в логи
+// гемы

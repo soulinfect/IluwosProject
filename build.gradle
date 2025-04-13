@@ -37,7 +37,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.0"
+version = "0.1"
 group= "iliwoS" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "iliwoS"
 
@@ -81,7 +81,7 @@ dependencies {
 processResources
 {
     // this will ensure that this task is redone when the versions change.
-    inputs.property "1.0", project.version
+    inputs.property "0.1", project.version
     inputs.property "1.8.9", project.minecraft.version
 
     // replace stuff in mcmod.info, nothing else
@@ -89,7 +89,7 @@ processResources
         include 'iluwoS'
                 
         // replace version and mcversion
-        expand '1.0':project.version, '1.8.9':project.minecraft.version
+        expand '0.1':project.version, '1.8.9':project.minecraft.version
     }
         
     // copy everything else, thats not the mcmod.info
