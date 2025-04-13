@@ -1,0 +1,16 @@
+[
+{
+  "modid": "iluwos",
+  "name": "iluwos",
+  "description": "",
+  "version": "${0.1}",
+  "mcversion": "${1.8.9}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sowuli"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
