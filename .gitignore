@@ -22,7 +22,7 @@
 *.launch
 
 # Конфиг
-/src/main/resources/
+/resources/
 
 # Логи и кеш
 /logs/
