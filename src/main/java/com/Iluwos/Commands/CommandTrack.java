@@ -1,5 +1,6 @@
 package com.Iluwos.commands;
 
+import com.Iluwos.IluwoS;
 import com.Iluwos.HypixelApiUtils;
 import com.Iluwos.IluwoSLogger;
 import com.Iluwos.ModConfig;
@@ -8,6 +9,7 @@ import com.Iluwos.ConfigManager;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonElement;
 import java.lang.Thread;
 
 import net.minecraft.command.CommandBase;
@@ -16,7 +18,10 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
 import java.util.UUID;
-
+import java.util.List;
+import java.util.Arrays;
+import java.util.Map;
+import java.lang.*;
 
 public class CommandTrack extends CommandBase {
     @Override
@@ -25,79 +30,142 @@ public class CommandTrack extends CommandBase {
     }
 
     @Override
+    public List<String> getCommandAliases() {
+        return Arrays.asList("t", "tr");
+    }
+
+    @Override
     public String getCommandUsage(ICommandSender sender) {
-        return "/track [item_name]\n/track stop\n/track start";
+        return "/t [item_name]\n/t stop/start\n/t remove [item]\n/t info\n/t timerset [ticks]";
     }
 
     @Override
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         if (args.length == 0) {
-            sender.addChatMessage(new ChatComponentText("[IluP] Please enter the item name"));
+            IluwoSLogger.send("Incorrect command use:\n" + getCommandUsage(sender));
             return;
         }
         ModConfig config = ConfigManager.loadConfig();
-        if (args[0].equals("stop")) {
-            if (!config.get_tracking_status()) {
-                sender.addChatMessage(new ChatComponentText("[IluP] Tracking has already been stopped!"));
-                return;
-            }
-            sender.addChatMessage(new ChatComponentText("[IluP] Tracking stopped!"));
-            config.set_tracking_status(false);
-            ConfigManager.saveConfig(config);
-            return;
-        } else if (args[0].equals("start")) {
-            if (config.get_tracking_status()) {
-                sender.addChatMessage(new ChatComponentText("[IluP] Tracking is already underway!"));
-                return;
-            }
-            sender.addChatMessage(new ChatComponentText("[IluP] Tracking started!"));
-            config.set_tracking_status(true);
-            ConfigManager.saveConfig(config);
-            return;
-        } else if (sender instanceof EntityPlayer) {
-            UUID raw_uuid = ((EntityPlayer) sender).getUniqueID();
-            String uuid = raw_uuid.toString().replace("-", "");
+        String subCommand = args[0].toLowerCase();
 
-            String item = args[0].toUpperCase();
-            if (config.getItems().containsKey(item)) {
-                sender.addChatMessage(new ChatComponentText("[IluP] This item is already being tracked."));
-                return;
-            } else {
-                new Thread(() -> {
-                    String jsonResponse = HypixelApiUtils.getProfilesData(uuid);
-                    int activeProfileIndex = HypixelApiUtils.findActiveProfileIndex(jsonResponse);
-            
-                    if (activeProfileIndex == -1) {
-                        sender.addChatMessage(new ChatComponentText("[IluP] No active profile found!"));
-                        return;
+        switch (subCommand) {
+            case "stop":
+                if (!config.get_tracking_status()) {
+                    IluwoSLogger.sendError("Tracking has already been stopped!");
+                } else {
+                    IluwoSLogger.send("Tracking stopped!");
+                    config.set_tracking_status(false);
+                    ConfigManager.saveConfig(config);
+                }
+                break;
+
+            case "start":
+                if (config.get_tracking_status()) {
+                    IluwoSLogger.sendError("Tracking is already underway!");
+                } else {
+                    IluwoSLogger.send("Tracking started!");
+                    config.set_tracking_status(true);
+                    ConfigManager.saveConfig(config);
+                }
+                break;
+
+            case "timerset":
+                if (args.length < 2 || args[1] == null || args[1].isEmpty()) {
+                    IluwoSLogger.send("Write the time in ticks!");
+                    break;
+                }
+                try {
+                    int timerticks = Integer.parseInt(args[1]);
+                    if (timerticks < 200) {
+                        IluwoSLogger.sendError("Time in ticks must be more than 200.");
+                    } else if (timerticks > 7200) {
+                        IluwoSLogger.sendError("That's too high a number.");
+                    } else {
+                        config.set_track_timer_ticks(timerticks);
+                        ConfigManager.saveConfig(config);
+                        IluwoSLogger.send("The timer time is set to " + timerticks + " ticks.");
                     }
-            
+                } catch (NumberFormatException e) {
+                    IluwoSLogger.sendError("Write the time in ticks!");
+                }
+                break;
+
+            case "preset":
+                if (args.length < 2 || args[1] == null || args[1].isEmpty()) {
+                    IluwoSLogger.sendError("Write the preset name: Custom or AllItems");
+                    break;
+                }
+                String preset = args[1].toLowerCase();
+                switch (preset) {
+                    case "custom":
+                        config.set_activePreset("Custom");
+                        IluwoS.activePreset = "Custom";
+                        ConfigManager.saveConfig(config);
+                        IluwoSLogger.send("Custom preset is set!");
+                        break;
+                    case "allitems":
+                        config.set_activePreset("AllItems");
+                        IluwoS.activePreset = "AllItems";
+                        ConfigManager.saveConfig(config);
+                        IluwoSLogger.send("AllItems preset is set!");
+                        break;
+                    default:
+                        IluwoSLogger.sendError("Write the preset name: Custom or AllItems");
+                }
+                break;
+
+            case "remove":
+                if (args.length < 2 || args[1] == null || args[1].isEmpty()) {
+                    IluwoSLogger.sendError("Write the item name to remove.");
+                    break;
+                }
+                String itemToRemove = args[1].toUpperCase();
+                new Thread(() -> {
                     try {
-                        JsonObject response = new JsonParser().parse(jsonResponse).getAsJsonObject();
-                        JsonObject profile = response.getAsJsonArray("profiles").get(activeProfileIndex).getAsJsonObject();
-                        JsonObject members = profile.getAsJsonObject("members");
-                        JsonObject userData = members.getAsJsonObject(uuid);
-                        JsonObject inventory = userData.getAsJsonObject("inventory");
-                        JsonObject sacksCounts = inventory.getAsJsonObject("sacks_counts");
-            
-                        if (sacksCounts == null || !sacksCounts.has(item)) {
-                            sender.addChatMessage(new ChatComponentText("[IluP] Item " + item + " not found in your sacks!"));
+                        JsonObject sacksCounts = HypixelApiUtils.getSacksCount();
+                        if (sacksCounts == null || !sacksCounts.has(itemToRemove)) {
+                            IluwoSLogger.sendError("Item " + itemToRemove + " not found in your sacks!");
                             return;
                         }
-            
-                        String itemCount = sacksCounts.get(item).getAsString();
-                        sender.addChatMessage(new ChatComponentText("[IluP] Item succesfully added! " + item + " count: " + itemCount));
-                        config.getItems().put(item, Integer.parseInt(itemCount));
-                        ConfigManager.saveConfig(config);
+
+                        if (!config.getPresets().get("Custom").getItems().containsKey(itemToRemove)) {
+                            IluwoSLogger.sendError("This item (" + itemToRemove + ") is not tracked.");
+                            return;
+                        }
+
+                        Integer removed = config.getPresets().get("Custom").getItems().remove(itemToRemove);
+                        if (removed != null) {
+                            IluwoSLogger.send(itemToRemove + " successfully removed!");
+                            ConfigManager.saveConfig(config);
+                        } else {
+                            IluwoSLogger.sendError("Unexpected error: item not removed.");
+                        }
                     } catch (Exception e) {
-                        sender.addChatMessage(new ChatComponentText("[IluP] An error occurred: " + e.getMessage()));
+                        IluwoSLogger.sendError("An error occurred: " + e.getMessage());
                         IluwoSLogger.error("Error in /track", e);
                     }
                 }).start();
+                break;
+            case "info": 
+                StringBuilder msg = new StringBuilder();
+                if (config.get_tracking_status()) {
+                    msg.append("Status: active. ");
+                } else {
+                    msg.append("Status: stopped. ");
+                }
+                msg.append("Items info: ");
+                for (Map.Entry<String, Integer> entry : config.getPresets().get("Custom").getItems().entrySet()) {
+                    msg.append(entry.getKey().toLowerCase()).append(", ");
+                }
+                IluwoSLogger.send(msg.toString());
+                break;
+                // обработка пустого пресета
+            default:
+                String item = args[0].toUpperCase();
+                HypixelApiUtils.addItem(item);
+                break;
             }
         }
-    }
-
     @Override
     public int getRequiredPermissionLevel() {
         return 0;

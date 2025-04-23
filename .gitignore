@@ -21,9 +21,13 @@
 /eclipse/
 *.launch
 
-# Конфиг
+# Config
 /src/main/resources/
+/libs/
+/.vscode/
+build.gradle
 
-# Логи и кеш
+# Logs
+log.txt
 /logs/
 /.cache/
