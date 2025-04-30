@@ -53,7 +53,7 @@ public class CommandTrack extends CommandBase {
                 if (!config.get_tracking_status()) {
                     IluwoSLogger.sendError("Tracking has already been stopped!");
                 } else {
-                    IluwoSLogger.send("Tracking stopped!");
+                    IluwoSLogger.send("\u00A7cTracking stopped!");
                     config.set_tracking_status(false);
                     ConfigManager.saveConfig(config);
                 }
@@ -63,7 +63,7 @@ public class CommandTrack extends CommandBase {
                 if (config.get_tracking_status()) {
                     IluwoSLogger.sendError("Tracking is already underway!");
                 } else {
-                    IluwoSLogger.send("Tracking started!");
+                    IluwoSLogger.send("\u00A7aTracking started!");
                     config.set_tracking_status(true);
                     ConfigManager.saveConfig(config);
                 }
@@ -76,12 +76,13 @@ public class CommandTrack extends CommandBase {
                 }
                 try {
                     int timerticks = Integer.parseInt(args[1]);
-                    if (timerticks < 200) {
-                        IluwoSLogger.sendError("Time in ticks must be more than 200.");
-                    } else if (timerticks > 7200) {
+                    if (timerticks < 1200) {
+                        IluwoSLogger.sendError("Time in ticks must be more than 1200.");
+                    } else if (timerticks > 72000) {
                         IluwoSLogger.sendError("That's too high a number.");
                     } else {
                         config.set_track_timer_ticks(timerticks);
+                        IluwoS.timerticks = timerticks;
                         ConfigManager.saveConfig(config);
                         IluwoSLogger.send("The timer time is set to " + timerticks + " ticks.");
                     }
@@ -149,13 +150,17 @@ public class CommandTrack extends CommandBase {
             case "info": 
                 StringBuilder msg = new StringBuilder();
                 if (config.get_tracking_status()) {
-                    msg.append("Status: active. ");
+                    msg.append("Status: \u00A7aactive.\u00A7r\u00A7e Time between requests: ");
                 } else {
-                    msg.append("Status: stopped. ");
+                    msg.append("Status: \u00A7cstopped.\u00A7r\u00A7e Time between requests: ");
                 }
-                msg.append("Items info: ");
+                msg.append(IluwoS.timerticks / 20);
+                msg.append("s. \nItems info: ");
                 for (Map.Entry<String, Integer> entry : config.getPresets().get("Custom").getItems().entrySet()) {
                     msg.append(entry.getKey().toLowerCase()).append(", ");
+                }
+                if (msg.length() >= 2) {
+                    msg.delete(msg.length() - 2, msg.length());
                 }
                 IluwoSLogger.send(msg.toString());
                 break;

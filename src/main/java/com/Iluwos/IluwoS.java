@@ -8,6 +8,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStoppingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -25,7 +26,7 @@ import net.minecraftforge.fml.common.gameevent.InputEvent;
 import com.Iluwos.commands.CommandTrack;
 import com.Iluwos.ConfigManager;
 import com.Iluwos.ModConfig;
-//import com.Iluwos.DiscordRichPresenceManager;
+import com.Iluwos.discord.DiscordHandler;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -41,15 +42,16 @@ public class IluwoS {
 
     private static int tickCounter = 0;
     public static String lastMessage = "";
-    private static Integer timerticks;
+    public static int timerticks;
     public static KeyBinding itemScanningKey;
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        //DiscordHandler.init();
+
         MinecraftForge.EVENT_BUS.register(this);
         ClientCommandHandler.instance.registerCommand(new CommandTrack());
         ModConfig config = ConfigManager.loadConfig();
-
         activePreset = config.get_activePreset();
         timerticks = config.get_track_timer_ticks();
         Map<String, Integer> items = config.getPresets().get(activePreset).getItems();
@@ -59,7 +61,6 @@ public class IluwoS {
         }
         itemScanningKey = new KeyBinding("Add Item", Keyboard.KEY_I, "IluwoS");
         ClientRegistry.registerKeyBinding(itemScanningKey);
-        //DiscordRichPresenceManager.start();
         IluwoSLogger.info("Iluwos has been successfully initialized!");
     }
 
@@ -70,9 +71,6 @@ public class IluwoS {
             return;
         }
 
-        // if (event.phase == TickEvent.Phase.END) {
-        //     DiscordRichPresenceManager.runCallbacks();
-        // }
         ModConfig config = ConfigManager.loadConfig();
         if (!config.get_tracking_status()) {
             return;
@@ -126,6 +124,9 @@ public class IluwoS {
             HypixelApiUtils.itemScanning();
         }
     }
+
+    @EventHandler
+    public void shutdown(FMLServerStoppingEvent event) {
+        //DiscordHandler.shutdown();
+    }
 }
-// не меняется пресет
-// изменить вывод (цвет + маленькие буквы)

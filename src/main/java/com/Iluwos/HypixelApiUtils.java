@@ -22,10 +22,12 @@ import java.util.concurrent.CountDownLatch;
 import java.util.UUID;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 import java.lang.Thread;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.SocketTimeoutException;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -42,83 +44,53 @@ import net.minecraft.inventory.Slot;
 import net.minecraftforge.client.event.GuiScreenEvent;
 
 public class HypixelApiUtils {
-    public static String loadApiKey() throws IOException {
-        try {
-            InputStream inputStream = HypixelApiUtils.class.getClassLoader().getResourceAsStream("config.json");
-
-            if (inputStream == null) {
-                throw new FileNotFoundException("Resource 'config.json' not found");
-            }
-
-            String configContent = readFromInputStream(inputStream);
-            JsonParser parser = new JsonParser();
-            JsonObject config = parser.parse(configContent).getAsJsonObject();
-            return config.get("api_key").getAsString();
-
-        } catch (Exception e) {
-            IluwoSLogger.error("loadapikey error: ", e);
-            return null;
-        }
-    }
-    private static String readFromInputStream(InputStream inputStream) throws IOException {
-        ByteArrayOutputStream result = new ByteArrayOutputStream();
-        byte[] buffer = new byte[1024];
-        int length;
-        while ((length = inputStream.read(buffer)) != -1) {
-            result.write(buffer, 0, length);
-        }
-        return result.toString(StandardCharsets.UTF_8.name());
-    }
     public static String getProfilesData(String uuid) {
+    try {
+        String apiUrl = "http://127.0.0.1:5000/skyblock/profiles?uuid=" + uuid;
+
+        HttpURLConnection connection = null;
+        BufferedReader reader = null;
+
         try {
-            String apiKey = loadApiKey();
-            String apiUrl = "https://api.hypixel.net/v2/skyblock/profiles?key=" + apiKey + "&uuid=" + uuid;
+            URL url = new URL(apiUrl);
+            connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.setConnectTimeout(5000);
+            connection.setReadTimeout(10000);
 
-            HttpURLConnection connection = null;
-            BufferedReader reader = null;
+            int responseCode = connection.getResponseCode();
+            IluwoSLogger.debug("HTTP Response Code: " + responseCode);  
 
-            try {
-                URL url = new URL(apiUrl);
-                connection = (HttpURLConnection) url.openConnection();
-                connection.setRequestMethod("GET");
-                connection.setConnectTimeout(5000);
-                connection.setReadTimeout(10000);
-
-                int responseCode = connection.getResponseCode();
-                //IluwoSLogger.debug("HTTP Response Code: " + responseCode);
-
-                if (responseCode != HttpURLConnection.HTTP_OK) {
-                    throw new IOException("HTTP error code: " + responseCode);
-                }
-
-                reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
-                StringBuilder response = new StringBuilder();
-                String line;
-
-                while ((line = reader.readLine()) != null) {
-                    response.append(line);
-                }
-                return response.toString();
-
-            } catch (Exception e) {
-                IluwoSLogger.error("An error occurred while getting profile data", e);
-            } finally {
-                try {
-                    if (reader != null) reader.close();
-                } catch (IOException e) {
-                    IluwoSLogger.error("An error occurred while closing the reader", e);
-                }
-                if (connection != null) connection.disconnect();
+            if (responseCode != HttpURLConnection.HTTP_OK) {
+                throw new IOException("HTTP error code: " + responseCode);
             }
-            return null;
-        } catch (IOException e) {
-            IluwoSLogger.error("Error with config reader: ", e);
-            return null;
+
+            reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
+            StringBuilder response = new StringBuilder();
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+            return response.toString();  
+
         } catch (Exception e) {
-            IluwoSLogger.error("Error with JSON parsing: ", e);
-            return null;
+            IluwoSLogger.error("An error occurred while getting profile data", e);
+        } finally {
+            try {
+                if (reader != null) reader.close();
+            } catch (IOException e) {
+                IluwoSLogger.error("An error occurred while closing the reader", e);
+            }
+            if (connection != null) connection.disconnect();
         }
+        return null;
+    } catch (Exception e) {
+        IluwoSLogger.error("Error with JSON parsing: ", e);
+        return null;
     }
+}
+
     public static int findActiveProfileIndex(String jsonResponse) {
         if (jsonResponse == null || jsonResponse.isEmpty()) {
             IluwoSLogger.error("The JSON response is empty or null");
@@ -195,7 +167,7 @@ public class HypixelApiUtils {
     
                     if (newCount != oldCount) {
                         msgUpdate = true;
-                        msg.append("\u00A7d[IluP]\u00A7e ")
+                        msg.append("\u00A7dIluP \u00BB\u00A7e ")
                            .append(IluwoS.ItemNamesArray.get(i).toLowerCase())
                            .append(" count: ")
                            .append(newCount);
@@ -226,7 +198,6 @@ public class HypixelApiUtils {
             ModConfig config = ConfigManager.loadConfig();
             Minecraft mc = Minecraft.getMinecraft();
             EntityPlayer player = mc.thePlayer;
-            String apiKey = loadApiKey();
             UUID raw_uuid = player.getUniqueID();
             String uuid = raw_uuid.toString().replace("-", "");
             String jsonResponse = HypixelApiUtils.getProfilesData(uuid);

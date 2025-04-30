@@ -8,8 +8,8 @@ import net.minecraft.client.Minecraft;
 
 public class IluwoSLogger {
     private static final String PREFIX = "[Ilup] ";
-    private static final String INGAME_PREFIX = "\u00A7d[IluP]\u00A7e "; 
-    private static final String RED_PREFIX = "\u00A7c[IluP] "; 
+    private static final String INGAME_PREFIX = "\u00A7dIluP \u00BB\u00A7e "; 
+    private static final String RED_PREFIX = "\u00A7cIluP \u00BB ";
     private static final String DEBUG = "[DEBUG] ";
     private static final String INFO = "[INFO] ";
     private static final String ERROR = "[ERROR] ";
