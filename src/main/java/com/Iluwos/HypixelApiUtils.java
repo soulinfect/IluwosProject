@@ -8,6 +8,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonElement;
+import com.google.common.cache.CacheBuilder;
+import com.google.common.cache.CacheLoader;
+import com.google.common.cache.LoadingCache;
 
 import java.io.InputStream;
 import java.io.FileNotFoundException;
@@ -44,53 +47,72 @@ import net.minecraft.inventory.Slot;
 import net.minecraftforge.client.event.GuiScreenEvent;
 
 public class HypixelApiUtils {
+    private static LoadingCache<String, String> profileCache = CacheBuilder.newBuilder()
+        .refreshAfterWrite((IluwoS.timerticks / 20), TimeUnit.SECONDS) 
+        .expireAfterWrite(1, TimeUnit.HOURS) 
+        .build(new CacheLoader<String, String>() {
+            @Override
+            public String load(String uuid) throws Exception {
+                return fetchFromApi(uuid);
+            }
+        });
     public static String getProfilesData(String uuid) {
-    try {
-        String apiUrl = "http://127.0.0.1:5000/skyblock/profiles?uuid=" + uuid;
-
-        HttpURLConnection connection = null;
-        BufferedReader reader = null;
-
         try {
-            URL url = new URL(apiUrl);
-            connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setConnectTimeout(5000);
-            connection.setReadTimeout(10000);
-
-            int responseCode = connection.getResponseCode();
-            IluwoSLogger.debug("HTTP Response Code: " + responseCode);  
-
-            if (responseCode != HttpURLConnection.HTTP_OK) {
-                throw new IOException("HTTP error code: " + responseCode);
-            }
-
-            reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
-            StringBuilder response = new StringBuilder();
-            String line;
-
-            while ((line = reader.readLine()) != null) {
-                response.append(line);
-            }
-            return response.toString();  
-
+            return profileCache.get(uuid);
         } catch (Exception e) {
-            IluwoSLogger.error("An error occurred while getting profile data", e);
-        } finally {
-            try {
-                if (reader != null) reader.close();
-            } catch (IOException e) {
-                IluwoSLogger.error("An error occurred while closing the reader", e);
-            }
-            if (connection != null) connection.disconnect();
+            IluwoSLogger.error("Error getting profile data from cache", e);
+            return null;
         }
-        return null;
-    } catch (Exception e) {
-        IluwoSLogger.error("Error with JSON parsing: ", e);
-        return null;
     }
-}
+    public static void refreshProfileData(String uuid) {
+        profileCache.refresh(uuid);
+    }
+    private static String fetchFromApi(String uuid) {
+        try {
+            String apiUrl = "http://127.0.0.1:5000/skyblock/profiles?uuid=" + uuid;
+            
+            HttpURLConnection connection = null;
+            BufferedReader reader = null;
 
+            try {
+                URL url = new URL(apiUrl);
+                connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
+                connection.setConnectTimeout(5000);
+                connection.setReadTimeout(10000);
+
+                int responseCode = connection.getResponseCode();
+                IluwoSLogger.debug("HTTP Response Code: " + responseCode);  
+
+                if (responseCode != HttpURLConnection.HTTP_OK) {
+                    throw new IOException("HTTP error code: " + responseCode);
+                }
+
+                reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8));
+                StringBuilder response = new StringBuilder();
+                String line;
+
+                while ((line = reader.readLine()) != null) {
+                    response.append(line);
+                }
+                return response.toString();  
+
+            } catch (Exception e) {
+                IluwoSLogger.error("An error occurred while getting profile data", e);
+                throw e; // Пробрасываем исключение для корректной обработки в CacheLoader
+            } finally {
+                try {
+                    if (reader != null) reader.close();
+                } catch (IOException e) {
+                    IluwoSLogger.error("An error occurred while closing the reader", e);
+                }
+                if (connection != null) connection.disconnect();
+            }
+        } catch (Exception e) {
+            IluwoSLogger.error("Error with JSON parsing: ", e);
+            throw new RuntimeException("Failed to fetch profile data", e);
+        }
+    }
     public static int findActiveProfileIndex(String jsonResponse) {
         if (jsonResponse == null || jsonResponse.isEmpty()) {
             IluwoSLogger.error("The JSON response is empty or null");

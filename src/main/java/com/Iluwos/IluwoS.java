@@ -54,6 +54,7 @@ public class IluwoS {
         ModConfig config = ConfigManager.loadConfig();
         activePreset = config.get_activePreset();
         timerticks = config.get_track_timer_ticks();
+        IluwoSLogger.info("" + timerticks / 20);
         Map<String, Integer> items = config.getPresets().get(activePreset).getItems();
         for (Map.Entry<String, Integer> entry : items.entrySet()) {
             ItemNamesArray.add(entry.getKey());

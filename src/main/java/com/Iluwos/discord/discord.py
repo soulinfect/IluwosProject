@@ -1,18 +1,28 @@
 import time
 from pypresence import Presence
 
-# ID вашего клиента (получить из Discord Developer Portal)
-client_id = '1364606826473197578'
+client_id = '1366285642111254648'  
 
-# Подключаемся к Discord
 RPC = Presence(client_id)
 RPC.connect()
 
-# Обновляем активность
-RPC.update(state="456", details="123", large_image="minecraft", small_image="small_image")
+print("RPC запущена. Нажми Ctrl+C для выхода.")
 
-# Ожидаем 60 секунд, чтобы обновление активности было видно
-time.sleep(60)
+try:
+    while True:  
+        current_time = int(time.time())  
+        
+        RPC.update(
+            details="123",
+            state="456",
+            large_image="minecraft",  
+            small_image="hypixel",  
+            start=current_time
+        )
+        
+        time.sleep(10)  
 
-# Закрываем соединение с Discord
-RPC.close()
+except KeyboardInterrupt:  
+    print("\nЗавершение работы...")
+finally:
+    RPC.close() 
