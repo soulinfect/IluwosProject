@@ -37,6 +37,3 @@ The goal of this project is to provide useful in-game features while keeping per
 - [GitHub Repository](https://github.com/soulinfect/IluwosProject)
 - [Hypixel SkyBlock](https://hypixel.net/skyblock)
 
----
-
-Stay tuned for future updates! 🎉
